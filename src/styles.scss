@@ -1,1 +1,265 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #00B06E;
+$primary-hover: #04D084;
+
+$secondary-color: #262626;
+
+$danger-color: #E56363;
+$tab-size: 780px;
+
+$btn-radius: 40px;
+
+
+
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-color: #17181C;
+    overflow-x: hidden;
+}
+
+
+body{
+    @media screen and ( min-width: ($tab-size+1) ) {
+        background-image: url('/assets/img/bg-main.svg');
+    }
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+app-root{
+    display: grid;
+}
+
+
+
+div, section, header, main, footer, nav, form{
+    box-sizing: border-box;
+}
+
+a, button{
+    cursor: pointer;
+    box-sizing: border-box;
+    &:disabled{
+        cursor: default;
+    }
+    transition: .7s;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+button{
+    background: none;
+    border: 1px solid #F5F5F5;
+}
+
+ul, li, p, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+
+router-outlet{
+    position: absolute;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width:8px;
+    height: 8px;
+    @media screen and ( max-width:$tab-size ) {
+        width: 0px;
+        height: 0px;
+    }
+}
+  
+::-webkit-scrollbar-thumb{
+    border: none;
+    background: $primary-color;
+    transition: .3s;
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+    background: $primary-hover;
+}
+  
+::-webkit-scrollbar-track{
+    border-width:0;
+    background: $secondary-color;
+}
+
+*{
+    color: #FFF;
+    font-weight: 500;
+}
+*::selection{
+    background-color: $primary-color;
+    color: #fff;
+}
+
+
+.row{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+
+.btn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 48px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+.bg-response{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.btn-outline{
+    @extend .btn;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    &:hover{
+        background-color: $primary-hover;
+        border-color: $primary-hover;
+        color: #0B0B0B;
+    }
+}
+
+.btn-primary{
+    @extend .btn;
+    color: #0B0B0B;
+    border-color: inherit;
+    background-color: $primary-color;
+    &:hover{
+        background-color: $primary-hover;
+    }
+}
+
+
+
+
+
+.anchor{
+    position: absolute;
+    top: -80px;
+    width: 0px;
+    height: 0px;
+    pointer-events: none;    
+}
+
+.cocogoose{
+    font-family: 'Cocogoose-Pro', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.section{
+    display: grid;
+    row-gap: 40px;
+    position: relative;
+    padding: 0px 40px;
+    @media screen and ( max-width: 580px ) {
+        padding: 0 16px;
+    }
+
+
+    &__title{
+        @extend .cocogoose;
+        font-size: 24px;
+        line-height: 28px;
+        @media screen and ( max-width: $tab-size ) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__content{
+        display: grid;
+        column-gap: 8px;
+        row-gap: 16px;
+    }
+}
+
+
+
+
+.card{
+    display: grid;
+    row-gap: 24px;
+
+    padding: 16px;
+
+    border-radius: 8px;
+    background: #1B1C21;
+    transition: .3s;
+    
+
+    &:hover{
+        background: #212329;
+    }
+
+    &__title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+
+        transition: inherit;
+
+        @media screen and ( max-width: $tab-size ) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &:hover &__title{
+        color: #00B06E;
+    }
+
+
+    &__description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #AAAAAA;
+
+        transition: inherit;
+        @media screen and ( max-width: $tab-size ) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    &:hover &__description{
+        color: #fff
+    }
+}

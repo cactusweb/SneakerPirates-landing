@@ -1,0 +1,9 @@
+.section__content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media screen and ( max-width: 1000px ) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and ( max-width: 780px ) {
+        grid-template-columns: 1fr;
+    }
+}

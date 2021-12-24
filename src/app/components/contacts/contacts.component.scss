@@ -1,0 +1,46 @@
+$tab-size: 780px;
+
+.section{
+
+    justify-content: center;
+    justify-items: center;
+
+    &__content{
+        grid-template-columns: auto auto;
+        column-gap: 64px;
+        justify-items: center;
+        row-gap: 24px;
+        @media screen and ( max-width: 600px ) {
+            grid-template-columns: auto;
+        }
+    }
+}
+
+
+.link{
+    height: 40px;
+
+    padding: 0px 16px;
+    
+    border-radius: 4px;
+    background: #212329;
+    
+    font-weight: 600;
+    font-size: 18px;
+
+    transition: .3s;
+
+    &:hover{
+        color: #00B06E;
+        svg path{
+            fill: #00B06E;
+        }
+    }
+
+    svg{
+        margin-right: 9.5px;
+        path{
+            transition: .3s;
+        }
+    }
+}

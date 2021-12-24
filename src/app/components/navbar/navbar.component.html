@@ -1,0 +1,25 @@
+<nav class="row">
+
+    <a routerLink="/" class="branding">
+        <img src="/assets/logo.svg" alt="">
+    </a>
+
+    <ul class="row menu" [ngStyle]="!menuShow ? { 'pointer-events': 'none', 'opacity': 0 } : {}">
+        <li class="menu__item">
+            <a routerLink="" (click)="scrollTo('home', $event)" >Home</a>
+        </li>
+        <li class="menu__item">
+            <a routerLink="" (click)="scrollTo('features', $event)">Features</a>
+        </li>
+        <li class="menu__item" (click)="scrollTo('faq', $event)">
+            <a routerLink="">FAQ</a>
+        </li>
+        <li class="menu__item" (click)="scrollTo('contacts', $event)">
+            <a routerLink="">Contacts</a>
+        </li>
+    </ul>
+
+
+    <a href="https://dash.spirates.io" class="btn-primary">Dashboard</a>
+
+</nav>
