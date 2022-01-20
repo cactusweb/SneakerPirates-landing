@@ -3,7 +3,7 @@ $mob-size: 480px;
 
 :host{
     display: grid;
-    * > {
+    > * {
         justify-items: center;
         max-width: 1360px;
         width: 100%;

@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { HomeComponent } from './screens/home/home.component';
 import { UserAgreementComponent } from './screens/user-agreement/user-agreement.component';
+import { NumWithPointPipe } from './pipes/num-with-point.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserAgreementComponent } from './screens/user-agreement/user-agreement.
     FooterComponent,
     ContactsComponent,
     HomeComponent,
-    UserAgreementComponent
+    UserAgreementComponent,
+    NumWithPointPipe
   ],
   imports: [
     BrowserModule,
