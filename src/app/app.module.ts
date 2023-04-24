@@ -13,6 +13,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { HomeComponent } from './screens/home/home.component';
 import { UserAgreementComponent } from './screens/user-agreement/user-agreement.component';
 import { NumWithPointPipe } from './pipes/num-with-point.pipe';
+import { DiscordServerComponent } from './components/discord-server/discord-server.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NumWithPointPipe } from './pipes/num-with-point.pipe';
     ContactsComponent,
     HomeComponent,
     UserAgreementComponent,
-    NumWithPointPipe
+    NumWithPointPipe,
+    DiscordServerComponent
   ],
   imports: [
     BrowserModule,
