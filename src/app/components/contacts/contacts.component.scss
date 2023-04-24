@@ -1,46 +1,33 @@
 $tab-size: 780px;
 
-.section{
-
-    justify-content: center;
-    justify-items: center;
-
-    &__content{
-        grid-template-columns: auto auto;
-        column-gap: 64px;
-        justify-items: center;
-        row-gap: 24px;
-        @media screen and ( max-width: 600px ) {
-            grid-template-columns: auto;
-        }
-    }
+.section {
+  justify-content: center;
 }
 
+.link {
+  height: 40px;
 
-.link{
-    height: 40px;
+  padding: 0px 16px;
 
-    padding: 0px 16px;
-    
-    border-radius: 4px;
-    background: #212329;
-    
-    font-weight: 600;
-    font-size: 18px;
+  border-radius: 4px;
+  background: #212329;
 
-    transition: .3s;
+  font-weight: 600;
+  font-size: 18px;
 
-    &:hover{
-        color: #00B06E;
-        svg path{
-            fill: #00B06E;
-        }
+  transition: 0.3s;
+
+  &:hover {
+    color: #00b06e;
+    svg path {
+      fill: #00b06e;
     }
+  }
 
-    svg{
-        margin-right: 9.5px;
-        path{
-            transition: .3s;
-        }
+  svg {
+    margin-right: 9.5px;
+    path {
+      transition: 0.3s;
     }
+  }
 }
