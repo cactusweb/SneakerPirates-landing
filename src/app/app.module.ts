@@ -16,6 +16,7 @@ import { NumWithPointPipe } from './pipes/num-with-point.pipe';
 import { DiscordServerComponent } from './components/discord-server/discord-server.component';
 import { DashboardInfoComponent } from './components/dashboard-info/dashboard-info.component';
 import { MembershipInfoComponent } from './components/membership-info/membership-info.component';
+import { ServiceInfoComponent } from './components/service-info/service-info.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MembershipInfoComponent } from './components/membership-info/membership
     NumWithPointPipe,
     DiscordServerComponent,
     DashboardInfoComponent,
-    MembershipInfoComponent
+    MembershipInfoComponent,
+    ServiceInfoComponent
   ],
   imports: [
     BrowserModule,
