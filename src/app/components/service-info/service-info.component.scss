@@ -1,0 +1,22 @@
+$tab-size: 780px;
+
+.section__title {
+  br {
+    display: none;
+    @media screen and (max-width: $tab-size) {
+      display: initial;
+    }
+  }
+}
+
+.service {
+  display: grid;
+  align-items: center;
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #aaa;
+    line-height: 19.5px;
+  }
+}

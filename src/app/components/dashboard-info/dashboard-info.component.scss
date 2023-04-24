@@ -1,0 +1,30 @@
+$tab-size: 780px;
+
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(auto, 50%) 1fr;
+  column-gap: 80px;
+  row-gap: 24px;
+  align-items: center;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: auto;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #aaa;
+    line-height: 19.5px;
+  }
+
+  &__illustration {
+    width: 100%;
+    max-width: 580px;
+    justify-self: center;
+    @media screen and (max-width: $tab-size) {
+      max-width: 400px;
+      justify-self: center;
+    }
+  }
+}
