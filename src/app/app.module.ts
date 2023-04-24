@@ -15,6 +15,7 @@ import { UserAgreementComponent } from './screens/user-agreement/user-agreement.
 import { NumWithPointPipe } from './pipes/num-with-point.pipe';
 import { DiscordServerComponent } from './components/discord-server/discord-server.component';
 import { DashboardInfoComponent } from './components/dashboard-info/dashboard-info.component';
+import { MembershipInfoComponent } from './components/membership-info/membership-info.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DashboardInfoComponent } from './components/dashboard-info/dashboard-in
     UserAgreementComponent,
     NumWithPointPipe,
     DiscordServerComponent,
-    DashboardInfoComponent
+    DashboardInfoComponent,
+    MembershipInfoComponent
   ],
   imports: [
     BrowserModule,

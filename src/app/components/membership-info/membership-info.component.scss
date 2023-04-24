@@ -1,0 +1,29 @@
+$tab-size: 780px;
+
+.membership {
+  display: grid;
+  grid-template-columns: minmax(auto, 33%) 1fr;
+  column-gap: 80px;
+  row-gap: 8px;
+  align-items: center;
+
+  @media screen and (max-width: $tab-size) {
+    grid-template-columns: auto;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #aaa;
+    line-height: 19.5px;
+  }
+
+  &__illustration {
+    width: 100%;
+    max-width: 335px;
+    @media screen and (max-width: $tab-size) {
+      max-width: 250px;
+      justify-self: center;
+    }
+  }
+}
