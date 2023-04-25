@@ -1,12 +1,3 @@
-// .section__content{
-//     grid-template-columns: 1fr 1fr 1fr;
-//     @media screen and ( max-width: 780px ) {
-//         grid-template-columns: 1fr;
-//     }
-    
-//     // @media screen and ( max-width: 780px ) {
-//     //     max-width: 520px;
-//     //     width: 100%;
-//     //     justify-self: center;
-//     // }
-// }
+.section__content {
+  gap: 8px;
+}
