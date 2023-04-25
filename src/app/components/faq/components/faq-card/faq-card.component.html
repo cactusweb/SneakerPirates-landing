@@ -1,0 +1,13 @@
+<div class="faq card" (click)="onChangeCollapseState()">
+  <div class="faq__header row">
+    <p class="faq__title">
+      {{ faq.question }}
+    </p>
+    <button
+      mat-icon-button
+      class="faq__btn"
+      [class.faq__btn_expand]="state === CardCollapseStates.expanded"
+    ></button>
+  </div>
+  <p class="faq__content" [@collapsePanel]="state" [innerHTML]="faq.answer"></p>
+</div>

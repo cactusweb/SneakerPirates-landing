@@ -1,20 +1,9 @@
 <section class="section">
-    <h2 class="section__title">FAQ</h2>
+  <h2 class="section__title">FAQ</h2>
 
-    <div class="section__content">
-        <div class="card">
-            <h3 class="card__title">What is S-Pirates?</h3>
-            <p class="card__description">S-Pirates is All in One Cooking Platform</p>
-        </div>
-        <div class="card">
-            <h3 class="card__title">What Drops are supported?</h3>
-            <p class="card__description">All in one Membership: Sneakers / GPUs / Consoles & so on</p>
-        </div>
-        <div class="card">
-            <h3 class="card__title">What is the Membership Price?</h3>
-            <p class="card__description">No Starting & Extra Fees. Renewal is $65/Month</p>
-        </div>
-    </div>
+  <div class="section__content">
+    <app-faq-card *ngFor="let card of faqCards" [faq]="card"></app-faq-card>
+  </div>
 
-    <span class="anchor" id="faq"></span>
+  <span class="anchor" id="faq"></span>
 </section>

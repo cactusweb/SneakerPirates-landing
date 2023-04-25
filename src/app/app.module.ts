@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { DiscordServerComponent } from './components/discord-server/discord-serv
 import { DashboardInfoComponent } from './components/dashboard-info/dashboard-info.component';
 import { MembershipInfoComponent } from './components/membership-info/membership-info.component';
 import { ServiceInfoComponent } from './components/service-info/service-info.component';
+import { FaqCardComponent } from './components/faq/components/faq-card/faq-card.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,11 @@ import { ServiceInfoComponent } from './components/service-info/service-info.com
     DiscordServerComponent,
     DashboardInfoComponent,
     MembershipInfoComponent,
-    ServiceInfoComponent
+    ServiceInfoComponent,
+    FaqCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
