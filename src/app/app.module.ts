@@ -19,6 +19,8 @@ import { DashboardInfoComponent } from './components/dashboard-info/dashboard-in
 import { MembershipInfoComponent } from './components/membership-info/membership-info.component';
 import { ServiceInfoComponent } from './components/service-info/service-info.component';
 import { FaqCardComponent } from './components/faq/components/faq-card/faq-card.component';
+import { PrivacyPolicyComponent } from './screens/privacy-policy/privacy-policy.component';
+import { RefundDisputePolicyComponent } from './screens/refund-dispute-policy/refund-dispute-policy.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { FaqCardComponent } from './components/faq/components/faq-card/faq-card.
     MembershipInfoComponent,
     ServiceInfoComponent,
     FaqCardComponent,
+    PrivacyPolicyComponent,
+    RefundDisputePolicyComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],

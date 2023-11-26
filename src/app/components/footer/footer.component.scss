@@ -22,13 +22,48 @@ footer {
   line-height: 22px;
 }
 
-#to-agreement {
-  font-size: 16px;
-  line-height: 20px;
-  transition: 0.3s;
-  text-decoration: underline;
-  &:hover {
-    color: #00b06e;
+.links {
+  display: grid;
+  justify-content: center;
+  gap: 12px;
+  grid-auto-flow: column;
+
+  @media screen and (max-width: 780px) {
+    grid-auto-flow: row;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 20px;
+    transition: 0.3s;
+    text-decoration: underline;
+    &:hover {
+      color: #00b06e;
+    }
+  }
+}
+
+.contacts {
+  display: grid;
+  gap: 12px;
+  &__body {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 12px;
+    @media screen and (max-width: 780px) {
+      grid-auto-flow: row;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    transition: 0.3s;
+    text-decoration: underline;
+    &:hover {
+      color: #00b06e;
+    }
   }
 }
 
