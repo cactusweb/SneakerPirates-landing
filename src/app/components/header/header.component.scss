@@ -109,7 +109,7 @@ header {
 }
 
 .btn-primary {
-  width: 181px;
+  width: 210px;
 
   @media screen and (max-width: 1000px) {
     justify-self: center;
@@ -117,7 +117,6 @@ header {
   }
 
   @media screen and (max-width: $tab-size) {
-    width: 165px;
     height: 44px;
     margin-top: 16px;
   }
